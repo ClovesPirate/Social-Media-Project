@@ -1,0 +1,15 @@
+@import "variables"; /* /src/scss/_variables.scss */
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+.background-image {
+  background-image: url(/media/login-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 90vh;
+  max-width: 100vw;
+}
+
+.logo {
+  min-width: 8em;
+  max-width: 10em;
+}
