@@ -10766,6 +10766,11 @@ textarea.form-control-lg {
   min-height: 85vh;
 }
 
+.max-width {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
 .logo {
   min-width: 8em;
   max-width: 10em;
