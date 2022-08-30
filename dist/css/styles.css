@@ -10772,4 +10772,10 @@ textarea.form-control-lg {
   max-width: 10em;
 }
 
+.banner {
+  max-height: 15vh;
+  width: 100%;
+  opacity: 0.5;
+}
+
 /*# sourceMappingURL=styles.css.map */
