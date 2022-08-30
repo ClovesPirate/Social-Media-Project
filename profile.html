@@ -17,142 +17,199 @@
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
   <script defer src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="dist/css/styles.css">
+  <link rel="stylesheet" href="https://use.typekit.net/bqw8pcm.css">
   <title>#connect | Home</title>
 </head>
 <body>
   <header>
     <!-- Primary navigation -->
     <nav class="navbar navbar-expand-md bg-light">
-      <div class="container-fluid">
+      <div class="mx-3 container-fluid">
         <a href="index.html" class="navbar-brand">
           <img src="/media/logo_1.svg" alt="logo" class="logo">
         </a>
         <!-- Hamburger Toggle menu -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <button class="navbar-toggler border-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
           <span class="navbar-toggler-icon"></span>
         </button>
         <!-- Navbar Menu -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          
+          <!-- Search Bar -->
+          <form role="search" class="d-flex me-sm-3">
+            <div class="input-group">
+              <input type="search" class="form-control border-secondary" placeholder="Search" aria-label="Search">
+            <button class="btn btn-secondary" type="submit">Go</button>
+            </div>
+          </form>
+  
           <ul class="navbar-nav">
             <li class="nav-item">
               <a href="index.html" class="nav-link" aria-current="page">Home</a>
             </li>
             <!-- Dropdown toggle -->
             <li class="nav-item dropdown">
-              <a href="#" class="nav-link dropdown-toggle active" role="button" data-bs-toggle="dropdown" aria-expanded="false">Profile</a>
+              <a href="#" class="nav-link dropdown-toggle active" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Meghan</a>
             <!-- Dropdown menu -->
-              <ul class="dropdown-menu">
-                <li><a href="profile.html" class="dropdown-item">Manage</a></li>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a href="#" class="dropdown-item">Edit Profile</a></li>
                 <li><a href="login.html" class="dropdown-item">Logout</a></li>
               </ul>
             </li>
           </ul>
-          <!-- Search Bar -->
-          <form role="search" class="d-flex">
-            <input type="search" class="form-control me-2" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
         </div>
       </div>
     </nav>
   </header>
-
   <main>
     <!-- Profile -->
-    <div class="container d-flex mt-4">
-      <div>
-        <img class="rounded" src="/media/meghan-profile.jpg" alt="profile" height="130" width="130">
-        <p class="text-center mt-1">243 friends</p>
+    <img src="/media/beach-banner.jpg" alt="Beach" class="img-fluid">
+    <div class="container d-sm-flex py-sm-5 border-bottom">
+      <!-- Image/Interaction -->
+      <div class="my-4">
+        <img class="profile circle mx-auto d-block" src="/media/meghan-profile.jpg" alt="profile">
+        <div>
+          <!-- Button trigger Modal -->
+          <button type="button" data-bs-toggle="modal" data-bs-target="#friendModal" class="mx-auto btn btn-outline-primary d-block my-4">3 friends</button>
+          <!-- Friend modal -->
+          <div class="modal fade" id="friendModal" tabindex="1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <p id="friendModalLabel" class="modal-title fw-bold">Friends</p>
+                <button aria-label="Close" data-bs-dismiss="modal" class="btn-close"></button>
+              </div>
+              <div class="modal-body d-flex">
+                <div class="text-center m-2">
+                  <img class="thumbnail" src="/media/profile-julia.jpg" alt="Julia">
+                  <p>Julia</p>
+                </div>
+                <div class="text-center m-2">
+                  <img class="thumbnail" src="/media/profile-matt.jpg" alt="Matt">
+                  <p>Matt</p>
+                </div>
+                <div class="text-center m-2">
+                  <img class="thumbnail" src="/media/profile-karen.jpg" alt="Karen">
+                  <p>Karen</p>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+          </div>
+        
+          <div class="list-group list-group-flush border-bottom">
+            <a type="button" href="#" class="text-center list-group-item list-group-item-action">Add</a>
+            <a type="button" href="#" class="text-center list-group-item list-group-item-action">Message</a>
+            <a type="button" href="#posts" class="text-center list-group-item list-group-item-action">Posts</a>
+          </div>
+        </div>
       </div>
-      <div class="ms-4">
-        <h1>Meghan Reed</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quod, odio soluta doloremque qui quo distinctio nesciunt fugit nam debitis dolorum necessitatibus? Dolorum eveniet reiciendis vel repellendus architecto suscipit iure velit sequi sed, dicta beatae perspiciatis voluptas tempora odio nihil dolorem commodi, saepe mollitia quae officia. Dignissimos nostrum a esse!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis doloremque similique, aut provident dolorem, temporibus sit nihil soluta dignissimos et, reprehenderit nemo aliquid ipsam facere atque. Officiis possimus culpa quasi maxime autem adipisci iste iure ullam cum eius nemo expedita natus quidem fuga esse accusamus tempora ad, dignissimos sapiente. Voluptatibus dolor, suscipit numquam deserunt perspiciatis repudiandae odit consequuntur aperiam labore architecto inventore molestiae rem dolorum odio accusamus magnam, culpa iste nulla quasi amet cupiditate quos. Corrupti doloribus numquam ipsum neque.</p>
+      <!-- Title/text -->
+      <div class="mt-sm-4 ms-sm-5">
+        <h1 class="fw-bold text-primary">Meghan Reed</h1>
+        <div>
+          <p class="fw-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quod, odio soluta doloremque qui quo distinctio nesciunt fugit nam debitis dolorum necessitatibus? Dolorum eveniet reiciendis vel repellendus architecto suscipit iure velit sequi sed, dicta beatae perspiciatis voluptas tempora odio nihil dolorem commodi, saepe mollitia quae officia. Dignissimos nostrum a esse!</p>
+          <p class="fw-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis doloremque similique, aut provident dolorem, temporibus sit nihil soluta dignissimos et, reprehenderit nemo aliquid ipsam facere atque. Officiis possimus culpa quasi maxime autem adipisci iste iure ullam cum eius nemo expedita natus quidem fuga esse accusamus tempora ad, dignissimos sapiente. Voluptatibus dolor, suscipit numquam deserunt perspiciatis repudiandae odit consequuntur aperiam labore architecto inventore molestiae rem dolorum odio accusamus magnam, culpa iste nulla quasi amet cupiditate quos. Corrupti doloribus numquam ipsum neque.</p>
+          <p class="fw-light">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt quisquam expedita fugit. Consectetur, sit doloremque! Sint similique fugiat excepturi molestiae, nemo ea officiis dolorem commodi assumenda hic. Error, praesentium! Officia unde nulla voluptate rem nihil voluptates earum delectus, quis veniam vero, eos aliquid dignissimos molestias accusamus quasi totam recusandae provident pariatur soluta ducimus velit vitae ad consequuntur beatae. Vero ex eum enim similique in nostrum qui labore, placeat culpa veniam dolorem, maxime numquam? Laborum facilis corporis esse quisquam assumenda numquam amet, beatae perspiciatis debitis eius maxime recusandae doloribus iusto? Dolor quidem at molestias, et inventore aut qui. Consequuntur harum distinctio tempore doloribus animi repudiandae soluta quam porro saepe nihil ex atque asperiores, recusandae consectetur blanditiis cum aspernatur amet praesentium vitae illo voluptatem delectus voluptates. Tempore numquam quos provident aut repudiandae officia? Maxime eius eum assumenda magni aperiam quo ipsam animi ducimus beatae expedita cumque, natus quia quas iste a. Inventore?
+          </p>
+        </div>
       </div>
     </div>
-    <div class="container mt-4 border-bottom">
-      <h2>Albums</h2>
-
-    </div>
-
     <!-- Profile Wall -->
-    <div class="container-sm my-5">
-      <form>
-        <label for="textAreaFeed">Write on Meghan's wall</label>
-        <textarea name="" class="form-control" id="textAreaFeed"rows="5" placeholder="Write on Meghan's wall."></textarea>
-        <button type="submit" class="btn btn-primary mt-1">Publish</button>
-      </form>
-    </div>
-    <!-- Posts -->
-    <div class="container border-bottom">
-      <div class="container d-flex">
-        <div class="m-3">
-          <img src="/media/hashtag-8.png" alt="" class="img-thumbnail" height="100" width="100">
-          <p class="text-center mt-2">Julia</p>
+    <section class="container-sm">
+      <h2 class="text-primary fw-bold mt-4">Meghan's wall</h2>
+      <!-- Form -->
+      <div class="container-sm px-sm-5">
+        <form class="position-relative">
+          <label for="textAreaFeed" aria-label="Write on Meghan's wall"></label>
+          <textarea name="" class="form-control" id="textAreaFeed"rows="5" placeholder="Write on Meghan's wall..."></textarea>
+          <button type="submit" class="btn btn-primary mt-2 position-absolute end-0">Post</button>
+        </form>
+      </div>
+      <!-- Content wall -->
+      <div class="py-3">
+        <div class="d-flex mt-3 py-3 border-bottom">
+          <div>
+            <img class="thumbnail circle" src="/media/profile-karen.jpg" alt="Karen">
+            <p class="text-center mt-2">Karen</p>
+          </div>
+          <div class="ps-4">
+            <p class="text-muted fs-6">22/12/21 at 12:32 pm</p>
+            <p class="fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, soluta? In ut vitae, quisquam, eaque perferendis nemo sit nulla fuga doloremque necessitatibus delectus soluta id beatae quae fugiat eligendi adipisci odio dolore sed rem! Eligendi est velit consequatur iste ratione exercitationem repellat suscipit porro, nobis odit accusantium voluptatibus sit nostrum?
+            </p>
+          </div>
         </div>
-        <div class="m-3">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere doloribus nulla perspiciatis molestias natus assumenda ullam fuga tempore recusandae delectus. Totam modi perspiciatis corporis excepturi libero autem eos labore veritatis a quos. Maxime, quae ut? Provident incidunt eius voluptatibus voluptatem?
+        <div class="d-flex mt-3 py-3 border-bottom">
+          <div>
+            <img class="thumbnail circle" src="/media/profile-julia.jpg" alt="Julia">
+            <p class="text-center mt-2">Julia</p>
+          </div>
+          <div class="ps-4">
+            <p class="text-muted fs-6">15/12/21 at 11:12 pm</p>
+            <p class="fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, soluta? In ut vitae, quisquam, eaque perferendis nemo sit nulla fuga doloremque necessitatibus delectus soluta id beatae quae fugiat eligendi adipisci odio dolore sed rem! Eligendi est velit consequatur iste ratione exercitationem repellat suscipit porro, nobis odit accusantium voluptatibus sit nostrum?
+            </p>
+          </div>
+        </div>
+        <div class="d-flex mt-3 py-3 border-bottom">
+          <div>
+            <img class="thumbnail circle" src="/media/profile-matt.jpg" alt="Matt">
+            <p class="text-center mt-2">Matt</p>
+          </div>
+          <div class="ps-4">
+            <p class="text-muted fs-6">12/12/21 at 02:41 am</p>
+            <p class="fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, soluta? In ut vitae, quisquam, eaque perferendis nemo sit nulla fuga doloremque necessitatibus delectus soluta id beatae quae fugiat eligendi adipisci odio dolore sed rem! Eligendi est velit consequatur iste ratione exercitationem repellat suscipit porro, nobis odit accusantium voluptatibus sit nostrum?
+            </p>
+          </div>
         </div>
       </div>
-      <div class="container d-flex">
-        <div class="m-3">
-          <img src="/media/hashtag-8.png" alt="" class="img-thumbnail" height="100" width="100">
-          <p class="text-center mt-2">Julia</p>
-        </div>
-        <div class="m-3">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere doloribus nulla perspiciatis molestias natus assumenda ullam fuga tempore recusandae delectus. Totam modi perspiciatis corporis excepturi libero autem eos labore veritatis a quos. Maxime, quae ut? Provident incidunt eius voluptatibus voluptatem?
-        </div>
-      </div>
-      <div class="container d-flex">
-        <div class="m-3">
-          <img src="/media/hashtag-8.png" alt="" class="img-thumbnail" height="100" width="100">
-          <p class="text-center mt-2">Julia</p>
-        </div>
-        <div class="m-3">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere doloribus nulla perspiciatis molestias natus assumenda ullam fuga tempore recusandae delectus. Totam modi perspiciatis corporis excepturi libero autem eos labore veritatis a quos. Maxime, quae ut? Provident incidunt eius voluptatibus voluptatem?
-        </div>
-      </div>
-    </div>
+    </section>
 
-    <!-- Profile posts -->
-    <section class="container border-bottom">
-      <div class="d-flex my-5">
-        <div class="border-end pe-4">
-          <img src="/media/hashtag-8.png" alt="" width="80" height="80">
-          <p class="d-flex justify-content-center mt-1">Julia</p>
-        </div>
-        <div class="px-4">
-          <div class="d-flex align-items-center">
-            <h2>Lorem ipsum</h2> <span class="ms-3">20/03/22 at 13:35</span>
+    <!-- Post History -->
+    <section class="container-sm my-3 border-bottom">
+      <h2 id="posts" class="text-primary fw-bold mb-5">Posts</h2>
+      <div>
+        <div class="d-flex my-4">
+          <div class="border-end pe-3">
+            <img class="thumbnail circle" src="/media/meghan-profile.jpg" alt="Meghan">
+            <p class="d-flex justify-content-center mt-1">Meghan</p>
           </div>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque autem reprehenderit debitis repellat hic sed a fugiat enim quia at necessitatibus rerum quo, exercitationem eos sapiente blanditiis error vitae adipisci.</p>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque autem reprehenderit debitis repellat hic sed a fugiat enim quia at necessitatibus rerum quo, exercitationem eos sapiente blanditiis error vitae adipisci.</p>
-        </div>
-      </div>
-      <div class="d-flex my-5">
-        <div class="border-end pe-4">
-          <img src="/media/hashtag-8.png" alt="" width="80" height="80">
-          <p class="d-flex justify-content-center mt-1">Julia</p>
-        </div>
-        <div class="px-4">
-          <div class="d-flex align-items-center">
-            <h2>Lorem ipsum</h2> <span class="ms-3">20/03/22 at 13:35</span>
+          <div class="ps-3">
+            <div class="d-flex align-items-center">
+              <h3>Lorem ipsum</h3> <span class="ms-3 text-muted">20/03/22 at 13:35 pm</span>
+            </div>
+            <p class="fw-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque autem reprehenderit debitis repellat hic sed a fugiat enim quia at necessitatibus rerum quo, exercitationem eos sapiente blanditiis error vitae adipisci.</p>
+            <p class="fw-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque autem reprehenderit debitis repellat hic sed a fugiat enim quia at necessitatibus rerum quo, exercitationem eos sapiente blanditiis error vitae adipisci.</p>
           </div>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque autem reprehenderit debitis repellat hic sed a fugiat enim quia at necessitatibus rerum quo, exercitationem eos sapiente blanditiis error vitae adipisci.</p>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque autem reprehenderit debitis repellat hic sed a fugiat enim quia at necessitatibus rerum quo, exercitationem eos sapiente blanditiis error vitae adipisci.</p>
         </div>
-      </div>
-      <div class="d-flex my-5">
-        <div class="border-end pe-4">
-          <img src="/media/hashtag-8.png" alt="" width="80" height="80">
-          <p class="d-flex justify-content-center mt-1">Julia</p>
-        </div>
-        <div class="px-4">
-          <div class="d-flex align-items-center">
-            <h2>Lorem ipsum</h2> <span class="ms-3">20/03/22 at 13:35</span>
+        <div class="d-flex my-5">
+          <div class="border-end pe-3">
+            <img class="thumbnail circle" src="/media/meghan-profile.jpg" alt="Meghan">
+            <p class="d-flex justify-content-center mt-1">Meghan</p>
           </div>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque autem reprehenderit debitis repellat hic sed a fugiat enim quia at necessitatibus rerum quo, exercitationem eos sapiente blanditiis error vitae adipisci.</p>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque autem reprehenderit debitis repellat hic sed a fugiat enim quia at necessitatibus rerum quo, exercitationem eos sapiente blanditiis error vitae adipisci.</p>
+          <div class="ps-3">
+            <div class="d-flex align-items-center">
+              <h3>Lorem ipsum</h3> <span class="ms-3 text-muted">20/03/22 at 13:35 pm</span>
+            </div>
+            <p class="fw-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque autem reprehenderit debitis repellat hic sed a fugiat enim quia at necessitatibus rerum quo, exercitationem eos sapiente blanditiis error vitae adipisci.</p>
+            <p class="fw-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque autem reprehenderit debitis repellat hic sed a fugiat enim quia at necessitatibus rerum quo, exercitationem eos sapiente blanditiis error vitae adipisci.</p>
+          </div>
+        </div>
+        <div class="d-flex my-5">
+          <div class="border-end pe-3">
+            <img class="thumbnail circle" src="/media/meghan-profile.jpg" alt="Meghan">
+            <p class="d-flex justify-content-center mt-1">Meghan</p>
+          </div>
+          <div class="ps-3">
+            <div class="d-flex align-items-center">
+              <h3>Lorem ipsum</h3> <span class="ms-3 text-muted">20/03/22 at 13:35 pm</span>
+            </div>
+            <p class="fw-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque autem reprehenderit debitis repellat hic sed a fugiat enim quia at necessitatibus rerum quo, exercitationem eos sapiente blanditiis error vitae adipisci.</p>
+            <p class="fw-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque autem reprehenderit debitis repellat hic sed a fugiat enim quia at necessitatibus rerum quo, exercitationem eos sapiente blanditiis error vitae adipisci.</p>
+          </div>
         </div>
       </div>
     </section>
