@@ -8,10 +8,28 @@
   min-height: 85vh;
 }
 
+.navbar-toggler {
+  border: none;
+
+  &:focus {
+    border: none;
+    box-shadow: none;
+  }
+}
+
+.navbar-collapse {
+  // margin-top: 1em;
+
+  form, li {
+    margin-top: .5em;
+  }
+}
+
 .max-width {
   max-width: 1040px;
   margin: 0 auto;
 }
+
 .logo {
   min-width: 8em;
   max-width: 10em;
