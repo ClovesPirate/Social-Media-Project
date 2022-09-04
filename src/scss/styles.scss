@@ -8,6 +8,19 @@
   min-height: 85vh;
 }
 
+.logo {
+  min-width: 8em;
+  max-width: 10em;
+}
+
+.thumbnail {
+  width: clamp(50px, 10vw, 80px);
+}
+
+.profile {
+  width: clamp(150px, 15vw, 250px);
+}
+
 .navbar-toggler {
   border: none;
 
@@ -25,22 +38,12 @@
   }
 }
 
+// ==== Utilities ==== //
+
+// Max width to element
 .max-width {
   max-width: 1040px;
   margin: 0 auto;
-}
-
-.logo {
-  min-width: 8em;
-  max-width: 10em;
-}
-
-.thumbnail {
-  width: clamp(50px, 10vw, 80px);
-}
-
-.profile {
-  width: clamp(150px, 15vw, 250px);
 }
 
 .circle {
