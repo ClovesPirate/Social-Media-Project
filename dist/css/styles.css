@@ -10792,10 +10792,6 @@ textarea.form-control-lg {
   width: clamp(50px, 10vw, 80px);
 }
 
-.thumbnail-sm {
-  width: 50px;
-}
-
 .profile {
   width: clamp(150px, 15vw, 250px);
 }
