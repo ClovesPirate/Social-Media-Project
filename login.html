@@ -5,38 +5,33 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://use.typekit.net/bqw8pcm.css">
-  <title>Document</title>
-</head>
-<body>
-  <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
   <script defer src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="dist/css/styles.css">
-  <title>#connect | Home</title>
+  <meta name="description" content="#Connect is an online social platform connecting likeminded people.">
+  <title>#Connect | Log in</title>
 </head>
 <body>
   <header>
     <!-- Primary navigation -->
-    <nav class="navbar navbar-expand-md bg-light">
+    <!-- <nav class="navbar navbar-expand-md bg-light">
       <div class="mx-3 container-fluid">
         <a href="#" class="navbar-brand">
           <img src="/media/logo_1.svg" alt="logo" class="logo">
         </a>
       </div>
-    </nav>
+    </nav> -->
+    <div class="bg-light pt-3 border-bottom border-primary border-3 px-1 d-flex justify-content-center">
+      <p class="fs-6 text-center"><span class="me-2"><button class="btn btn-primary">Sign up</button></span>to a new and exciting social platform for free and find likeminded people from all over the world</p>
+    </div>
   </header>
-
+  <!-- Main -->
   <main class="overflow-hidden">
     <div class="row background-image">
+     
       <div class="col-md-7"></div>
-      <form class="text-center p-5 col-md-5 align-self-md-center" action="profile.html">
-        <img src="/media/logo_1.svg" alt="logo" class="logo bg-light py-1 px-3 circle mb-5 shadow-sm">
+      <!-- Form -->
+      <form class="text-center p-5 col-md-5 align-self-md-center max-width" action="profile.html">
+        <!-- <img src="/media/logo_1.svg" alt="logo" class="logo bg-light py-1 px-3 circle"> -->
         <div class="input-group flex-nowrap">
           <span class="input-group-text" id="addon-wrapping">&#x1F464;</span>
           <input type="text" class="form-control shadow-sm" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping" minlength="5" required>
@@ -45,10 +40,9 @@
           <span class="input-group-text" id="addon-wrapping">&#x1F511;</span>
           <input type="password" class="form-control shadow-sm" placeholder="Password" aria-label="Password" aria-describedby="addon-wrapping" minlength="5" required>
         </div>
-          <button class="btn btn-primary mt-4 shadow-sm px-5 py-1 fs-4" type="submit">Log in</button>
+          <button class="btn btn-primary mt-3 shadow-sm px-5 py-1 fs-5" type="submit">Log in</button>
       </form>
     </div>
-    
   </main>
 
   <footer>
@@ -58,8 +52,5 @@
       </a>
     </div>
   </footer>
-</body>
-</html>
-  
 </body>
 </html>

@@ -17,12 +17,33 @@
   width: clamp(50px, 10vw, 80px);
 }
 
-.thumbnail-sm {
-  width: 50px;
-}
-
 .profile {
   width: clamp(150px, 15vw, 250px);
+}
+
+.navbar-toggler {
+  border: none;
+
+  &:focus {
+    border: none;
+    box-shadow: none;
+  }
+}
+
+.navbar-collapse {
+  // margin-top: 1em;
+
+  form, li {
+    margin-top: .5em;
+  }
+}
+
+// ==== Utilities ==== //
+
+// Max width to element
+.max-width {
+  max-width: 1040px;
+  margin: 0 auto;
 }
 
 .circle {
