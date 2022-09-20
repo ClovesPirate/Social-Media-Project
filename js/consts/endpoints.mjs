@@ -10,5 +10,3 @@ export const postsURL = '/api/v1/social/posts/';
 
 export const sortDesc = '/api/v1/social/posts?sort=created&sortOrder=desc';
 export const sortAsc =  '/api/v1/social/posts?sort=title&sortOrder=asc';
-
-export const singlePostURL = `/api/v1/social/posts/${id}`;
