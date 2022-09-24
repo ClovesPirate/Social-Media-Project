@@ -12,3 +12,15 @@ export function displayError(message = 'An error has occured while retrieving da
             <button class='btn btn-primary' onClick='window.location.reload();'>Reload</button>
           </div>`
 };
+
+export function logout(token, name) {
+  localStorage.removeItem(name);
+  localStorage.removeItem(token);
+  window.location.href = 'login.html';
+}
+
+export function login(user) {
+  localStorage.setItem('token', user.accessToken);
+  localStorage.setItem('name', user.name);
+  window.location.href = 'profile.html';
+}

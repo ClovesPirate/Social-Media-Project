@@ -1,9 +1,11 @@
-import { fetchData } from "./utils/fetch.mjs";
-import { BASE_URL, loginURL, registerURL } from "./consts/endpoints.mjs";
+import { displayError, fetchData, login } from "./utils/functions.mjs";
+import { loginURL, registerURL } from "./consts/endpoints.mjs";
+import { postOptions } from "./consts/fetchOptions.mjs";
 
 const loginForm = document.getElementById('login-form');
+const loginButton = document.getElementById('login-button');
 
-loginForm.addEventListener('submit', (e) => {
+loginButton.addEventListener('click', (e) => {
   e.preventDefault();
 
   const email = document.getElementById('login-email');
@@ -11,23 +13,16 @@ loginForm.addEventListener('submit', (e) => {
 
   const payload = JSON.stringify({ email: email.value, password: password.value });
 
-  async function login() {
+  async function fetchLogin() {
     try {
-      const user = await fetchData(`${BASE_URL}${loginURL}`, {
-        method: 'POST',
-        body: payload,
-        headers: {
-          'Content-Type': 'application/json; charset=UTF-8',
-        },
-      });
-      localStorage.setItem('token', user.accessToken);
-      localStorage.setItem('name', user.name);
-      window.location.href = `profile.html?name=${user.name}`;
+      const user = await fetchData(loginURL, postOptions('POST', payload));
+     login(user);
     }
     catch(error) {
       console.log(error);
+      displayError(message);
     }
   }
 
-  login();
+  fetchLogin();
 });
