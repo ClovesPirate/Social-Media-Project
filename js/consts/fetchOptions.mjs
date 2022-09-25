@@ -14,7 +14,7 @@ export function postOptionsValidated(method, body, token) {
     body: body,
     headers: {
       Authorization: `Bearer ${token}`,
-      'Content-Type': 'application/json;'
+      'Content-Type': 'application/json; charset=UTF-8',
     }
   }
 }
