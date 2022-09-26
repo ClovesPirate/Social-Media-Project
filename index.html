@@ -8,6 +8,7 @@
   <script defer src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="dist/css/styles.css">
   <script src="https://kit.fontawesome.com/6b9295215b.js" crossorigin="anonymous"></script>
+  <script src="./js/main.mjs" defer type="module"></script>
   <link rel="stylesheet" href="https://use.typekit.net/bqw8pcm.css">
   <meta name="description" content="#Connect, meet new people or connect with your friends">
   <title>#Connect | Home</title>
@@ -58,9 +59,11 @@
   <main>
     <!-- Form feed -->
     <div class="container-sm my-5 px-sm-5 max-width">
-      <form class="position-relative">
-        <label for="textAreaFeed">What's on your mind?</label>
-        <textarea name="" class="form-control" id="textAreaFeed"rows="5" placeholder="Write something..."></textarea>
+      <form class="position-relative" id="postForm">
+        <label for="postTitle">Title</label>
+        <input type="text" id="title" class="form-control">
+        <label class="mt-2" for="textAreaFeed">What's on your mind?</label>
+        <textarea name="" class="form-control mt-1" id="textAreaFeed"rows="5" placeholder="Write something..."></textarea>
         <button type="submit" class="btn btn-primary mt-2 position-absolute end-0">Publish</button>
       </form>
     </div>
@@ -76,17 +79,14 @@
         <div class="dropdown d-flex">
           <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Filter</button>
           <ul class="dropdown-menu dropdown-menu-end p-2">
-            <li><a class="dropdown-item" href="#">Popular</a></li>
-            <li><a class="dropdown-item" href="#">Recent</a></li>
-            <li><a class="dropdown-item" href="#">Best Friends</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a href="#" class="dropdown-item">Customize</a></li>
+            <li><a class="dropdown-item" href="#">Newest</a></li>
+            <li><a class="dropdown-item" href="#">Oldest</a></li>
           </ul>
         </div>
       </div>
     </div>
       <!-- Posts -->
-    <section class="container border-bottom max-width">
+    <section class="container border-bottom max-width" id="postContainer">
       <div class="d-flex my-5">
         <div class="border-end pe-3">
           <img class="thumbnail circle" src="/media/profile-matt.jpg" alt="Matt">
@@ -101,8 +101,6 @@
           <div class="d-flex justify-content-between">
             <div>
               <button class="btn btn-outline-secondary position-relative">😉<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark opacity-50">5
-              </span>
-              </button>
               </span>
               </button>
             </div>
