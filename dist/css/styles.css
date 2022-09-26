@@ -10763,7 +10763,7 @@ textarea.form-control-lg {
   background-image: url(/media/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 85vh;
+  min-height: 93vh;
 }
 
 .logo {
@@ -10789,6 +10789,10 @@ textarea.form-control-lg {
 
 .navbar-collapse form, .navbar-collapse li {
   margin-top: 0.5em;
+}
+
+input:valid + .error-message {
+  display: none;
 }
 
 .max-width {
