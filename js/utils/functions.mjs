@@ -19,11 +19,11 @@ export function login(user) {
 }
 
 export function createPost(item) {
-  return `<div class="py-3">
+  return `<div class="py-3 border-bottom border-top rounded my-3">
             <div class="d-flex align-items-center">
-              <h2 class="border-start border-5 border-secondary ps-2 text-primary">${item.title}</h2>
+              <h2 class="border-start border-5 border-secondary ms-2 ps-3 text-primary">${item.title}</h2>
               <span class="ms-3 text-muted">${item.created}</span>
             </div>
-            <p class="mt-2 ms-3">${item.body}</p>
+            <p class="mt-2 ms-4">${item.body}</p>
           </div>`
 }
